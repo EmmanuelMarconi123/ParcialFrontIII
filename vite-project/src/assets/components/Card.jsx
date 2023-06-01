@@ -1,12 +1,15 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 
-const Card = ({persona}) => {
 
-    const {nombre, apellido} = persona
+const Card = ({nombre , color}) => {
+
+  console.log(nombre, color);
 
   return (
-    <div>
-      <h1>Hola {nombre}, tu apellido es:  {apellido}</h1>
+    <div>              
+        
+        <h1> Hola {nombre}, tu color favorito es: {color}</h1>   
+
     </div>
   )
 }
